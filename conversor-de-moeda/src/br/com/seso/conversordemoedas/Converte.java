@@ -25,7 +25,7 @@ public class Converte {
    public void converterRealEmPesoArgentino(double valorAConverter) {
       double pesoArgentino = valorAConverter / 0.021;
       pesoArgentino = (double) Math.round(pesoArgentino * 100d) / 100;
-      JOptionPane.showMessageDialog(null, "O valor em eso Argentino é " + pesoArgentino);
+      JOptionPane.showMessageDialog(null, "O valor em Peso Argentino é " + pesoArgentino);
    }
 
    public void converterRealEmPesoChileno(double valorAConverter) {

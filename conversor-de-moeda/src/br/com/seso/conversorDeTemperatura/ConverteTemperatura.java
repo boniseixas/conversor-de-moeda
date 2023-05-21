@@ -14,7 +14,7 @@ public class ConverteTemperatura {
    public double converterCelsiusParaFahrenheit(double temperaturaAConverter) {
       double celsiusParaFahrenheit = temperaturaAConverter * 1.8 + 32;
       celsiusParaFahrenheit = (double) Math.round(celsiusParaFahrenheit * 100d) / 100;
-      JOptionPane.showMessageDialog(null, temperaturaAConverter + " Graus Celsius são " + celsiusParaFahrenheit + " Graus Fahrenheit ");
+      JOptionPane.showMessageDialog(null, temperaturaAConverter + " Graus Celsius são " + celsiusParaFahrenheit + " Graus Fahrenheit");
       return celsiusParaFahrenheit;
   }
 

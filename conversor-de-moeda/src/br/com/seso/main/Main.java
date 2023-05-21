@@ -12,12 +12,12 @@ public class Main {
       ConversaoDeTemperatura temperatura = new ConversaoDeTemperatura();
 
       while (true) {
-         String opcao = JOptionPane.showInputDialog(null, "Escolha uma opção ", "Menu", JOptionPane.PLAIN_MESSAGE, null,
+         String opcao = JOptionPane.showInputDialog(null, "Escolha uma opção", "Menu", JOptionPane.PLAIN_MESSAGE, null,
                new Object[] { "Conversor de moeda", "Conversor de Temperatura" }, "Escolha").toString();
 
          switch (opcao) {
-            case "Coversor de moeda":
-               String input = JOptionPane.showInputDialog("Insira um valor: ");
+            case "Conversor de moeda":
+               String input = JOptionPane.showInputDialog("Insira um valor:");
                if (checar(input)) {
                   double valorRecebido = Double.parseDouble(input);
                   moedas.converterMoeda(valorRecebido);
@@ -32,16 +32,15 @@ public class Main {
                   JOptionPane.showMessageDialog(null, "Valor inválido");
                }
                break;
-            case "Conversor de tempetatura":
-               input = JOptionPane.showInputDialog("Insira a temperatura para converter");
+            case "Conversor de Temperatura":
+               input = JOptionPane.showInputDialog("Insira a temperatura para converter:");
                if (checar(input)) {
                   double valorRecebido = Double.parseDouble(input);
                   temperatura.converterTemperatura(valorRecebido);
 
-                  int resposta = 0;
-                  resposta = JOptionPane.showConfirmDialog(null, "Deseja continuar?");
+                  int resposta = JOptionPane.showConfirmDialog(null, "Deseja continuar?");
                   if ((resposta == 0) && (checar(input))) {
-
+                    
                   } else {
                      JOptionPane.showMessageDialog(null, "Programa finalizado");
                   }
@@ -50,6 +49,7 @@ public class Main {
                }
                break;
          }
+         break;
       }
    }
 

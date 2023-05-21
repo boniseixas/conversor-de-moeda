@@ -8,11 +8,11 @@ public class ConversaoDeTemperatura {
 
     public void converterTemperatura(double valorRecebido) {
         String opcao = (JOptionPane.showInputDialog(null, "Escolha uma opção para converter", "Temperatura", JOptionPane.PLAIN_MESSAGE, null, new Object[]{
-                "Graus Celsius a Graus Fahrenheit",
-                "Graus Celsius a Kelvin",
-                "Graus Fahrenheit a Graus Celsius",
-                "Kelvin a Graus Celsius",
-                "Kelvin a Graus Fahrenheit"}, "Escolha")).toString();
+                "Graus Celsius para Graus Fahrenheit",
+                "Graus Celsius para Kelvin",
+                "Graus Fahrenheit para Graus Celsius",
+                "Kelvin para Graus Celsius",
+                "Kelvin para Graus Fahrenheit"}, "Escolha")).toString();
         switch (opcao) {
             case "Graus Celsius para Graus Fahrenheit":
                 temperatura.converterCelsiusParaFahrenheit(valorRecebido);
